@@ -1,0 +1,7 @@
+{
+	"documentId": "ea51d4e6c183e213f4169440",
+	"outputFormat": "urdf",
+	"packageName": "tractor_model/tractor",
+	"robotName": "tractor_robot",
+	"assemblyName": "TractorAssembly"
+}

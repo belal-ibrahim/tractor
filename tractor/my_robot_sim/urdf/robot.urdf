@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot name="tractor_robot">
+<link name="body">
+<visual>
+<origin xyz="0 -1 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my_robot_sim/urdf/rotor.stl"/>
+</geometry>
+<material name="rotor_material">
+<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -1 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my_robot_sim/urdf/rotor.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0 0 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my_robot_sim/urdf/body.stl"/>
+</geometry>
+<material name="body_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my_robot_sim/urdf/body.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0 0.99999999999999988898 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my_robot_sim/urdf/tractor/rotor.stl"/>
+</geometry>
+<material name="rotor_material">
+<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0.99999999999999988898 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my_robot_sim/urdf/rotor.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0 5.2047488963762519317e-18 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my-robot_sim/urdf/tractor/rotor.stl"/>
+</geometry>
+<material name="rotor_material">
+<color rgba="0.64705882352941179736 0.64705882352941179736 0.64705882352941179736 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 5.2047488963762519317e-18 -0.5" rpy="0 -0 0" />
+<geometry>
+	<mesh filename="package://my_robot_sim/urdf/rotor.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="2.4556418921628688724e-17 3.1865973988143852753e-16 0.61505694542073752196" rpy="0 0 0"/>
+<mass value="19739.303695107002568" />
+<inertia ixx="40377.942149105809222" ixy="-4.016515401078878106e-05"  ixz="1.888597557398338714e-14" iyy="7956.2824525604901282" iyz="2.1501931189513091568e-12" izz="38541.734627954705502" />
+</inertial>
+</link>
+
+
+</robot>
